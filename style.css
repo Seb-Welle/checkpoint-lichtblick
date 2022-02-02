@@ -86,7 +86,7 @@ h3 {
 
 .article-heat {
   width: 100%;
-  height: 50ch;
+  height: auto;
   background-color: var(--background-pink);
   text-align: center;
   padding: 6rem 1rem;
@@ -108,9 +108,9 @@ h3 {
 
 .article-climate {
   width: 100%;
-  height: 20ch;
+  height: auto;
   background-color: var(--background-white);
-  padding: 2rem 1rem 14rem 2rem;
+  padding: 2rem 1rem 2rem 2rem;
   text-align: center;
 }
 
@@ -123,13 +123,14 @@ h3 {
   border-radius: 10px;
 }
 
-.image-car {
+.image-box {
   max-width: 50ch;
   max-height: auto;
   _flex-direction: column;
   _align-items: flex-end;
   margin-top: 0.5rem;
   margin-left: -2.5rem;
+  border-radius: 10px 10px 0 0;
 }
 
 .nav-text {
@@ -145,7 +146,7 @@ h3 {
 
 .article-energy {
   width: 100%;
-  height: 50ch;
+  height: auto;
   background-color: var(--background-green);
   text-align: center;
   padding: 6rem 1rem;
