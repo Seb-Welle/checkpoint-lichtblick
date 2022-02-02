@@ -27,6 +27,12 @@ body {
   --background-green: rgb(129, 168, 129);
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 110ch;
+  }
+}
+
 h1 {
   font-size: 40px;
 }
@@ -47,13 +53,18 @@ h3 {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .nav-link {
-  padding: 0.5rem 2rem;
   text-decoration: none;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .main-header {
+    flex-direction: row; /* muss noch gefixxt werden */
+  }
 }
 
 .head-section {
@@ -68,20 +79,39 @@ h3 {
 }
 
 .image-header {
-  max-width: 60ch;
-  max-height: 40ch;
+  max-width: 100%;
+  max-height: auto;
   flex-direction: column;
   align-items: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .image-header {
+    background-image: url(); /*Image noch einsetzen*/
+    background-color: var(--background-grey);
+  }
 }
 
 .head-article {
   padding: 0 2rem 1rem 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .head-article {
+    padding: 1rem 12rem 0 12rem;
+  }
+}
+
 .space {
   width: 100%;
   height: 20ch;
   background-color: var(--background-white);
+}
+
+@media screen and (min-width: 768px) {
+  .space {
+    height: 2rem;
+  }
 }
 
 .article-heat {
@@ -106,6 +136,12 @@ h3 {
   padding: 0.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .article-heat {
+    padding: 1rem 12rem 2rem 12rem;
+  }
+}
+
 .article-climate {
   width: 100%;
   height: auto;
@@ -115,19 +151,30 @@ h3 {
 }
 
 .article-box {
-  width: 100%;
-  height: auto;
+  width: 50ch;
+  height: 70ch;
   background-color: var(--background-white);
   padding: 0 1rem 2rem 2rem;
   border: 4px solid var(--border-color);
   border-radius: 10px;
 }
 
+.grid-container {
+  background-color: var(--background-white);
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    display: flex;
+  }
+  .article-box {
+    flex: 1;
+  }
+}
+
 .image-box {
   max-width: 50ch;
   max-height: auto;
-  _flex-direction: column;
-  _align-items: flex-end;
   margin-top: 0.5rem;
   margin-left: -2.5rem;
   border-radius: 10px 10px 0 0;
@@ -142,6 +189,12 @@ h3 {
   width: 100%;
   height: 10ch;
   background-color: var(--background-white);
+}
+
+@media screen and (min-width: 768px) {
+  .small-space {
+    height: 2rem;
+  }
 }
 
 .article-energy {
@@ -162,6 +215,12 @@ h3 {
   padding: 0.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  .article-energy {
+    padding: 1rem 12rem 2rem 12rem;
+  }
+}
+
 .main-footer {
   width: 100%;
   height: auto;
@@ -177,7 +236,19 @@ h3 {
 .nav-link-impressum {
   font-size: 18px;
   color: var(--background-white);
-  list-style-type: none;
+  _list-style-type: none;
   line-height: 4;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main-footer {
+    padding: 1ch;
+  }
+  .nav-link-impressum {
+    line-height: 1.4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*Fehler suchen!!*/
+  }
 }
