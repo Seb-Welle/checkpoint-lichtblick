@@ -4,4 +4,32 @@
 
 body {
   margin: 0;
+  max-width: 80ch;
+
+  --text-color: black;
+}
+
+.container-logo {
+  display: flex;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: auto;
+  padding: 1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.panorama {
+  max-width: 100%;
 }
