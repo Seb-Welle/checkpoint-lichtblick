@@ -98,7 +98,7 @@ h3 {
 }
 
 .article-heat > :nth-child(3) {
-  border: 3px solid var(--text-color);
+  border: 4px solid var(--text-color);
   border-radius: 10px;
   width: 50%;
   margin: auto;
@@ -153,9 +153,30 @@ h3 {
 }
 
 .article-energy > :nth-child(3) {
-  border: 3px solid var(--text-color);
+  border: 4px solid var(--text-color);
   border-radius: 10px;
   width: 50%;
   margin: auto;
   background-color: var(--background-green);
   padding: 0.5rem;
+}
+
+.main-footer {
+  width: 100%;
+  height: auto;
+  padding: 5ch;
+  color: var(--background-white);
+  background-color: var(--text-color);
+}
+
+.impressum-list {
+  display: grid;
+}
+
+.nav-link-impressum {
+  font-size: 18px;
+  color: var(--background-white);
+  list-style-type: none;
+  line-height: 4;
+  text-align: center;
+}
